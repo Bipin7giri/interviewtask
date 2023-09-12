@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+  <!-- Add Bootstrap CSS (Replace with your Bootstrap version) -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Add Bootstrap JS (Replace with your Bootstrap version) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/index.js"></script>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><span>CLICK FIT</span></a>
+
+        <!-- Toggler/collapsible Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">More</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <div class="container">
+        <div class="banner-text">
+          <div class="banner-heading">Welcome to CLICK FIT Gym!</div>
+          <div class="banner-sub-heading">
+            Your path to a healthier lifestyle starts here.
+          </div>
+          <button type="button" class="btn btn-warning text-dark btn-banner">
+            Get started
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section id="features">
+      <h1>
+        Fitness Plans &
+        <span style="color: #fed136; font-family: 'Libre Baskerville', serif"
+          >Nutritions</span
+        >
+      </h1>
+      <div class="flex">
+        <div class="features-flex-div">
+          <h4>Weight Loss</h4>
+          <p>
+            Achieve your fitness goals with our personalized weight loss plans.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            omnis?
+          </p>
+          <ul>
+            <li>Customized workout routines</li>
+            <li>Healthy meal planning</li>
+            <li>Expert guidance</li>
+          </ul>
+        </div>
+        <div class="features-flex-div">
+          <h4 style="color: #fed136; font-family: 'Libre Baskerville', serif">
+            Weight Loss
+          </h4>
+          <p>
+            Achieve your fitness goals with our personalized weight loss plans.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            omnis?
+          </p>
+          <ul>
+            <li>Customized workout routines</li>
+            <li>Healthy meal planning</li>
+            <li>Expert guidance</li>
+          </ul>
+        </div>
+        <div class="features-flex-div">
+          <h4 style="color: #fed136; font-family: 'Libre Baskerville', serif">
+            Weight Loss
+          </h4>
+
+          <p>
+            Achieve your fitness goals with our personalized weight loss plans.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            omnis?
+          </p>
+          <ul>
+            <li>Customized workout routines</li>
+            <li>Healthy meal planning</li>
+            <li>Expert guidance</li>
+          </ul>
+        </div>
+        <div class="features-flex-div">
+          <h4 style="color: #fed136; font-family: 'Libre Baskerville', serif">
+            Weight Loss
+          </h4>
+
+          <p>
+            Achieve your fitness goals with our personalized weight loss plans.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            omnis?
+          </p>
+          <ul>
+            <li>Customized workout routines</li>
+            <li>Healthy meal planning</li>
+            <li>Expert guidance</li>
+          </ul>
+        </div>
+        <div class="features-flex-div">
+          <h4 style="color: #fed136; font-family: 'Libre Baskerville', serif">
+            Weight Loss
+          </h4>
+
+          <p>
+            Achieve your fitness goals with our personalized weight loss plans.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            omnis?
+          </p>
+          <ul>
+            <li>Customized workout routines</li>
+            <li>Healthy meal planning</li>
+            <li>Expert guidance</li>
+          </ul>
+        </div>
+        <div class="features-flex-div">
+          <h4 style="color: #fed136; font-family: 'Libre Baskerville', serif">
+            Weight Loss
+          </h4>
+
+          <p>
+            Achieve your fitness goals with our personalized weight loss plans.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            omnis?
+          </p>
+          <ul>
+            <li>Customized workout routines</li>
+            <li>Healthy meal planning</li>
+            <li>Expert guidance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- api content -->
+    <div id="api-content"></div>
+
+
+<!-- upload photo -->
+<div class="upload-container">
+  <input type="file" id="imageInput" accept="image/*">
+  <label for="imageInput" class="upload-label">
+    <div class="upload-icon"></div>
+    <span>Drag & Drop or Click to Upload</span>
+  </label>
+  <img id="preview-image" src="" alt="Uploaded Image">
+  <div id="message"></div>
+</div>
+
+    <!-- subscribtion plan -->
+
+    <section id="pricing" class="pricing-content section-padding">
+      <div class="container">
+        <div class="section-title text-center">
+          <h1>Gym Membership Plans</h1>
+          <p>Choose the plan that best fits your fitness goals and needs.</p>
+        </div>
+        <div class="row text-center">
+          <div
+            class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.1s"
+            data-wow-offset="0"
+          >
+            <div class="single-pricing">
+              <div class="price-head">
+                <h2>Basic</h2>
+              </div>
+              <h1 class="price">$29</h1>
+              <h5>Monthly</h5>
+              <ul>
+                <li>Access to gym facilities</li>
+                <li>Basic workout programs</li>
+                <li>Open gym hours</li>
+              </ul>
+              <a href="#">Join Now</a>
+            </div>
+          </div>
+          <!--- END COL -->
+          <div
+            class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.2s"
+            data-wow-offset="0"
+          >
+            <div class="single-pricing">
+              <div class="price-head">
+                <h2>Pro</h2>
+              </div>
+              <h1 class="price">$49</h1>
+              <h5>Monthly</h5>
+              <ul>
+                <li>Access to gym facilities</li>
+                <li>Advanced workout programs</li>
+                <li>Personal trainer sessions</li>
+                <li>24/7 gym access</li>
+              </ul>
+              <a href="#">Join Now</a>
+            </div>
+          </div>
+          <!--- END COL -->
+          <div
+            class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+            data-wow-offset="0"
+          >
+            <div class="single-pricing single-pricing-white">
+              <div class="price-head">
+                <h2>Premium</h2>
+              </div>
+              <span class="price-label">Best Value</span>
+              <h1 class="price">$69</h1>
+              <h5>Monthly</h5>
+              <ul>
+                <li>Access to gym facilities</li>
+                <li>Customized workout plans</li>
+                <li>Unlimited personal trainer sessions</li>
+                <li>Access to premium gym amenities</li>
+                <li>24/7 gym access</li>
+                <li>Exclusive fitness classes</li>
+              </ul>
+              <a href="#">Join Now</a>
+            </div>
+          </div>
+          <!--- END COL -->
+        </div>
+        <!--- END ROW -->
+      </div>
+      <!--- END CONTAINER -->
+    </section>
+
+    <!-- trainner -->
+    <section id="trainers">
+      <div class="container">
+        <div class="section-title text-center">
+          <h1 style="color: #fed136; font-family: 'Libre Baskerville', serif">
+            Our Trainers
+          </h1>
+          <p>Meet our dedicated team of fitness trainers.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="trainer-card">
+              <img
+                src="https://images.pexels.com/photos/2011383/pexels-photo-2011383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Trainer 1"
+              />
+              <h2>John Doe</h2>
+              <p>Certified Personal Trainer</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="trainer-card">
+              <img
+                src="https://images.pexels.com/photos/4662326/pexels-photo-4662326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Trainer 2"
+              />
+              <h2>Jane Smith</h2>
+              <p>Fitness Coach</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="trainer-card">
+              <img
+                src="https://images.pexels.com/photos/3912944/pexels-photo-3912944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Trainer 3"
+              />
+              <h2>Mike Johnson</h2>
+              <p>Strength & Conditioning Specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="text-intro">
+          <h2 style="color: #fed136; font-family: 'Libre Baskerville', serif">About Us</h2>
+          <p>
+            CLICK FIT Gym is committed to helping you achieve your fitness
+            goals. Our state-of-the-art facilities and experienced trainers are
+            here to support your fitness journey. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Minima maxime quam architecto quo
+            inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Minima maxime quam architecto quo
+            inventore harum ex magni, dicta impedit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- why join us -->
+
+    <section id="why-join" class="why-join-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="why-join-points">
+              <h2 style="color: #fed136; font-family: 'Libre Baskerville', serif">Why Join Us?</h2>
+              <ul>
+                <li>Experienced and certified trainers</li>
+                <li>State-of-the-art gym equipment</li>
+                <li>Customized workout plans</li>
+                <li>Wide range of fitness classes</li>
+                <li>24/7 access to the gym</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="why-join-image">
+              <img src="https://images.pexels.com/photos/1756959/pexels-photo-1756959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gym Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+                <a class="navbar-brand" href="#"><span>CLICK FIT</span></a>
+            </div>
+            <div class="footer-links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2023 Your Company. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+  </body>
+</html>

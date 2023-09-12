@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
+
+
+
+.body {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    color: #6c6c6f;
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #323233;
+    text-transform: uppercase;
+}
+
+.navbar-brand span {
+    color: #fed136;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+    font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fed136;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #fed136;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    border-top: 3px solid #fed136;
+}
+
+.dropdown-item:hover {
+    background-color: #fed136;
+    color: #fff;
+}
+
+nav {
+    -webkit-transition: padding-top .3s, padding-bottom .3s;
+    -moz-transition: padding-top .3s, padding-bottom .3s;
+    transition: padding-top .3s, padding-bottom .3s;
+    border: none;
+}
+
+.shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+}
+
+.banner {
+    background-image: url('https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    text-align: center;
+    color: #fff;
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner-text {
+    padding: 200px 0 150px 0;
+}
+
+.banner-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.banner-sub-heading {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.btn-banner {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.text-intro {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/* global */
+/* .flex container */
+
+#features {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* .flex container */
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* .features-flex-div */
+.features-flex-div {
+    width: calc(33.33% - 20px);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.features-flex-div:hover {
+    transform: scale(1.05);
+}
+
+.features-flex-div h4 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.features-flex-div p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.features-flex-div ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.features-flex-div li {
+    margin-bottom: 5px;
+}
+
+/* Apply the base color */
+.features-flex-div h1 span {
+    color: #fed136;
+}
+
+/* Media query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+    .features-flex-div {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Media query for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .features-flex-div {
+        width: 100%;
+    }
+}
+
+
+
+/* Style the subscription plans section */
+.pricing-content {
+    margin-top: 20px;
+}
+
+.single-pricing {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 40px -10px rgba(0, 64, 128, .09);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width:480px) {
+    .single-pricing {
+        margin-bottom: 30px;
+    }
+}
+
+.single-pricing:hover {
+    box-shadow: 0px 60px 60px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transform: translate(0, -10px);
+}
+
+.price-label {
+    color: #fff;
+    background: #ffaa17;
+    font-size: 16px;
+    width: 100px;
+    margin-bottom: 15px;
+    display: block;
+    -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    margin-left: -20px;
+    position: absolute;
+}
+
+.price-head h2 {
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    font-size: 26px;
+}
+
+.price-head span {
+    display: inline-block;
+    background: #ffaa17;
+    width: 6px;
+    height: 6px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.single-pricing {}
+
+.single-pricing h5 {
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.single-pricing ul {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.single-pricing ul li {
+    line-height: 35px;
+}
+
+.single-pricing a {
+    background: none;
+    border: 2px solid #ffaa17;
+    border-radius: 5000px;
+    color: #ffaa17;
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 10px 45px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+
+.single-pricing a:hover,
+.single-pricing a:focus {
+    background: #ffaa17;
+    color: #fff;
+    border: 2px solid #ffaa17;
+}
+
+.single-pricing-white {
+    background: #232434
+}
+
+.single-pricing-white ul li {
+    color: #fff;
+}
+
+.single-pricing-white h2 {
+    color: #fff;
+}
+
+.single-pricing-white h1 {
+    color: #fff;
+}
+
+.single-pricing-white h5 {
+    color: #fff;
+}
+
+
+#trainers {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.section-title h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.trainer-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.trainer-card:hover {
+    transform: translateY(-5px);
+}
+
+.trainer-card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.trainer-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.trainer-card p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+
+
+
+
+.why-join-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.why-join-points {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.why-join-points h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.why-join-points ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.why-join-points li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.why-join-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+    .trainer-card {
+        margin: 0 auto 20px;
+        width: 80%;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .trainer-card {
+        margin: 0 auto 20px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .trainer-card img {
+        margin-bottom: 10px;
+    }
+
+    .section-title h1 {
+        font-size: 28px;
+    }
+
+    .section-title p {
+        font-size: 16px;
+    }
+
+    .trainer-card h2 {
+        font-size: 20px;
+    }
+
+    .trainer-card p {
+        font-size: 16px;
+    }
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    max-width: 100%;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #fed136;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+}
+
+
+
+/* Add your existing CSS styles for the upload-container, upload-label, and upload-icon here */
+
+.upload-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.upload-icon {
+    width: 100px;
+    height: 100px;
+    background-image: url('upload-icon.png'); /* Replace with your own icon */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#file-input {
+    display: none;
+}
+
+#preview-image {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Style for when the container is hovered */
+.upload-container:hover {
+    background-color: #f0f0f0;
+    border-color: #aaa;
+}
+
+/* Style for the label text */
+.upload-label span {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style for the label when it's hovered */
+.upload-label:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+
+#api-content {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 20px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Add a border for separation */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Margin to separate it from other content */
+  }
+
+/* mobile view */
+@media (max-width:500px) {
+    .navbar-nav {
+        background-color: #000;
+        border-top: 3px solid #fed136;
+        color: #fff;
+        z-index: 1;
+        margin-top: 5px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 0.7em 1em !important;
+        font-size: 100%;
+        font-weight: 500;
+    }
+
+    .banner-text {
+        padding: 150px 0 150px 0;
+    }
+
+    .banner-heading {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .banner-sub-heading {
+        font-size: 10px;
+        font-weight: 200;
+        line-height: 10px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .banner-text {
+        padding: 150px 0 150px 0;
+    }
+
+    .banner-sub-heading {
+        font-size: 23px;
+        font-weight: 200;
+        line-height: 23px;
+        margin-bottom: 40px;
+    }
+}
